@@ -16,5 +16,14 @@ public function contact(){
     return view('contact');
 }
 
+public function hello($name, $age){
+    $data =[
+        'name' => $name,
+        'age' => $age
+    ];
+    return view('hello', $data);
+}
+
+
 
 }
