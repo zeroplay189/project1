@@ -24,3 +24,6 @@ Route::get('/hello/{name}/{age}', [HomeController::class, 'hello']);
 Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/category/create', [CategoryController::class, 'create']);
 Route::post('/category/store', [CategoryController::class, 'store']);
+Route::get('/category/edit/{id}', [CategoryController::class, 'edit']);
+Route::get('/category/delete/{id}', [CategoryController::class, 'delete']);
+Route::post('/category/update/{id}', [CategoryController::class, 'update']);
